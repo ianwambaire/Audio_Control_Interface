@@ -1,10 +1,8 @@
 # Audio Control Interface Lab
 
 ## Project Overview
-This project is a custom audio control interface built using HTML, CSS, and JavaScript.  
+This is a custom audio control interface built using HTML, CSS, and JavaScript.  
 It allows users to interact with an audio file using programmed controls instead of the default browser audio player.
-
-The interface is designed as a one-page portfolio-style layout to make the application more interactive, organized, and easy to use.
 
 ## Live Demo
 https://ianwambaire.github.io/Audio_Control_Interface/
@@ -55,8 +53,8 @@ profile.jpg
 ## Author
 
 Ian Wambaire  
-Multimedia Project – 2026
+Audio Inteface lab 2026
 
 ## Notes
 
-This project was created as part of a lab assignment focused on building an interactive audio interface using standard web technologies without external libraries.
+I created this project to focuse on building an interactive audio interface using standard web technologies without external libraries.
