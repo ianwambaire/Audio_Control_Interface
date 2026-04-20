@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio control interface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <section class="profile">
+      <img src="profile.jpg" alt="Profile photo" class="profile-img">
+      <h1>Ian Wambaire</h1>
+      <p class="role">Audio Control Interface Lab</p>
+    </section>
+
+    <section class="card">
+      <h2>About This Project</h2>
+      <p>
+        This is a custom audio control interface built using HTML, CSS, and JavaScript. It allows users to interact with audio using custom controls instead of the browser's default player.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>How to Use</h2>
+      <ul>
+        <li>Click Play to start the audio</li>
+        <li>Click Pause to stop playback</li>
+        <li>Adjust volume using the slider</li>
+        <li>Use skip buttons to move forward or backward</li>
+        <li>Use mute if needed</li>
+        <li>Click the speed button to change playback speed</li>
+        <li>Click the loop button to turn repeat on or off</li>
+        <li>Use keyboard controls for faster interaction</li>
+      </ul>
+    </section>
+
+    <section class="card player">
+      <h2>Audio Control Panel</h2>
+
+      <audio id="audio" src="song.mp3"></audio>
+
+      <div class="status" id="status">Ready to play</div>
+
+      <div class="time">
+        <span id="currentTime">0:00</span> /
+        <span id="duration">0:00</span>
+      </div>
+
+      <input type="range" id="progress" value="0" min="0" max="100">
+
+      <div class="controls">
+        <button id="backBtn">-5s</button>
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="forwardBtn">+5s</button>
+      </div>
+
+      <div class="controls">
+        <button id="muteBtn">Mute</button>
+        <button id="speedBtn">1x</button>
+        <button id="loopBtn">Loop Off</button>
+      </div>
+
+      <div class="volume">
+        <label for="volume">Volume</label>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+      </div>
+
+      <div class="keyboard-box">
+        <h3>Keyboard Controls</h3>
+        <p>Space = Play / Pause</p>
+        <p>M = Mute / Unmute</p>
+        <p>L = Loop On / Off</p>
+        <p>Arrow Left = Backward 5 seconds</p>
+        <p>Arrow Right = Forward 5 seconds</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Features Included</h2>
+      <div class="features">
+        <span>Play / Pause</span>
+        <span>Volume Control</span>
+        <span>Mute / Unmute</span>
+        <span>Skip Back / Forward</span>
+        <span>Playback Speed Control</span>
+        <span>Current Time Display</span>
+        <span>Progress Bar Seeking</span>
+        <span>Loop / Repeat</span>
+        <span>Keyboard Controls</span>
+      </div>
+    </section>
+
+    <footer>
+      <p>Ian Wambaire • Sound API Lab • 2026</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
